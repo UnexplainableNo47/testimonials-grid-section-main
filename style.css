@@ -1,0 +1,112 @@
+:root{
+
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    background-color: var(--Light-grayish-blue);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container{
+    margin: 5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'item1 item1 item2 item5'
+    'item3 item4 item4 item5';
+}
+.grid-container > div {
+    padding: 1rem 2rem 1.5rem 1.5rem;
+    box-shadow: 0 0px 5px 0px #dedede;
+    border-radius: 10px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+.profile-img {
+    margin-right: 1rem;
+}
+.profile-img > img {
+    border: 0.2rem solid var(--Light-grayish-blue); 
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.grid-item1{
+    color: var(--White);
+    background-color: var(--Moderate-violet);
+    grid-area: item1;
+    
+}
+.grid-item2{
+    color: var(--White);
+    background-color: var(--Very-dark-grayish-blue);
+    grid-area: item2;
+}
+.grid-item3{
+    color: var(--Very-dark-grayish-blue);
+    background-color: var(--White);
+    grid-area: item3;
+}
+.grid-item4{
+    color: var(--White);
+    background-color: var(--Very-dark-blackish-blue);
+    grid-area: item4;
+}
+.grid-item5{
+    color: var(--Very-dark-grayish-blue);
+    background-color: var(--White);
+    grid-area: item5;
+}
+h3{
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+h4{
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+h5{
+    font-weight: 300;
+}
+p{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+@media only screen and (max-width:1000px) {
+    .grid-container{
+        margin: 5rem;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'item1' 
+        'item2' 
+        'item3' 
+        'item4'
+        'item5';
+    }
+    .grid-container > div {
+        width: 10rem;
+        padding: 1rem 2rem 1.5rem 1.5rem;
+        box-shadow: 0 0px 5px 0px #dedede;
+        border-radius: 10px;
+    }
+}
