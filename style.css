@@ -24,7 +24,7 @@
     justify-content: center;
 }
 .grid-container{
-    margin: 5rem;
+    margin: 2rem 10rem 2rem 10rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-areas: 
@@ -54,6 +54,9 @@
     color: var(--White);
     background-color: var(--Moderate-violet);
     grid-area: item1;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position:  90% 3%;
     
 }
 .grid-item2{
